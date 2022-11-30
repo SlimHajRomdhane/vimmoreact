@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Dashboard from "views/Dashboard/Dashboard.js";
 import Buttons from "views/Components/Buttons.js";
 import GridSystem from "views/Components/GridSystem.js";
@@ -37,7 +21,6 @@ import Calendar from "views/Calendar/Calendar.js";
 import Widgets from "views/Widgets/Widgets.js";
 import UserPage from "views/Pages/UserPage.js";
 import TimelinePage from "views/Pages/TimelinePage.js";
-import RTL from "views/Pages/RTL.js";
 import PricingPage from "views/Pages/PricingPage.js";
 import LoginPage from "views/Pages/LoginPage.js";
 import RegisterPage from "views/Pages/RegisterPage.js";
@@ -72,13 +55,7 @@ let routes = [
         component: UserPage,
         layout: "/admin"
       },
-      {
-        path: "/rtl-support",
-        name: "RTL Support",
-        mini: "RS",
-        component: RTL,
-        layout: "/admin"
-      },
+      
       {
         path: "/register-page",
         name: "Register Page",

@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -56,7 +40,7 @@ function LoginPage() {
                 <Card className="card-login card-plain">
                   <CardHeader>
                     <div className="logo-container">
-                      <img src={nowLogo} alt="now-logo" />
+                      <img className="loginlogo" src={nowLogo} alt="now-logo"/>
                     </div>
                   </CardHeader>
                   <CardBody>
@@ -73,7 +57,7 @@ function LoginPage() {
                       </InputGroupAddon>
                       <Input
                         type="text"
-                        placeholder="First Name..."
+                        placeholder="Identifiant..."
                         onFocus={(e) => setfirstnameFocus(true)}
                         onBlur={(e) => setfirstnameFocus(false)}
                       />
@@ -91,7 +75,7 @@ function LoginPage() {
                       </InputGroupAddon>
                       <Input
                         type="text"
-                        placeholder="Last Name..."
+                        placeholder="Mot de passe..."
                         onFocus={(e) => setlastnameFocus(true)}
                         onBlur={(e) => setlastnameFocus(false)}
                       />
@@ -105,19 +89,19 @@ function LoginPage() {
                       href="#pablo"
                       className="mb-3 btn-round"
                     >
-                      Get Started
+                      S'identifier
                     </Button>
                     <div className="pull-left">
                       <h6>
                         <a href="#pablo" className="link footer-link">
-                          Create Account
+                          Créer un compte
                         </a>
                       </h6>
                     </div>
                     <div className="pull-right">
                       <h6>
                         <a href="#pablo" className="link footer-link">
-                          Need Help?
+                          Besoin d'aide?
                         </a>
                       </h6>
                     </div>

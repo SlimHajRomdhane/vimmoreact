@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import classnames from "classnames";
 // reactstrap components
@@ -38,7 +22,7 @@ const Step2 = React.forwardRef((props, ref) => {
   };
   return (
     <>
-      <h5 className="info-text"> What are you doing? (checkboxes) </h5>
+      <h5 className="info-text"> Que faites vous? (checkboxes) </h5>
       <Row className="justify-content-center">
         <Col xs={12} lg={10}>
           <Row>

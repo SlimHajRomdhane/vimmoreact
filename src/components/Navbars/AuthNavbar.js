@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -53,19 +37,19 @@ function AuthNavbar() {
             </NavbarToggler>
           </div>
           <Link to="/" className="navbar-brand">
-            Now Ui Dashboard Pro - React
+            Virtual IMMO
           </Link>
         </div>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <Link to="/admin/dashboard" className="nav-link">
-                <i className="now-ui-icons design_bullet-list-67" /> Dashboard
+                <i className="now-ui-icons design_bullet-list-67" /> Espace Personelle
               </Link>
             </NavItem>
             <NavItem className={activeRoute("/auth/register-page")}>
               <Link to="/auth/register-page" className="nav-link">
-                <i className="now-ui-icons tech_mobile" /> Register
+                <i className="now-ui-icons tech_mobile" /> S'enregister
               </Link>
             </NavItem>
             <NavItem className={activeRoute("/auth/login-page")}>
@@ -75,12 +59,12 @@ function AuthNavbar() {
             </NavItem>
             <NavItem className={activeRoute("/auth/pricing-page")}>
               <Link to="/auth/pricing-page" className="nav-link">
-                <i className="now-ui-icons business_money-coins" /> Pricing
+                <i className="now-ui-icons business_money-coins" /> Packs
               </Link>
             </NavItem>
             <NavItem className={activeRoute("/auth/lock-screen-page")}>
               <Link to="/auth/lock-screen-page" className="nav-link">
-                <i className="now-ui-icons ui-1_lock-circle-open" /> Lock
+                <i className="now-ui-icons ui-1_lock-circle-open" /> Verrouiller
               </Link>
             </NavItem>
           </Nav>

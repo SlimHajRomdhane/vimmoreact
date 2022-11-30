@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import React from "react";
 import { NavLink } from "react-router-dom";
 // used for making the prop types of this component
@@ -165,7 +148,7 @@ function Sidebar(props) {
             target="_blank"
           >
             <div className="logo-img">
-              <img src={logo} alt="react-logo" />
+              <img src={logo} alt="react-logo"/>
             </div>
           </a>
           <a
@@ -173,7 +156,7 @@ function Sidebar(props) {
             className="simple-text logo-normal"
             target="_blank"
           >
-            Creative Tim
+            Virtual IMMO
           </a>
           <div className="navbar-minimize">
             <Button
@@ -202,7 +185,7 @@ function Sidebar(props) {
                 onClick={() => setOpenAvatar(!openAvatar)}
               >
                 <span>
-                  Ryan Gosling
+                  Slim HR
                   <b className="caret" />
                 </span>
               </a>
@@ -211,19 +194,19 @@ function Sidebar(props) {
                   <li>
                     <a href="#pablo" onClick={(e) => e.preventDefault}>
                       <span className="sidebar-mini-icon">MP</span>
-                      <span className="sidebar-normal">My Profile</span>
+                      <span className="sidebar-normal">Mon profil</span>
                     </a>
                   </li>
                   <li>
                     <a href="#pablo" onClick={(e) => e.preventDefault}>
                       <span className="sidebar-mini-icon">EP</span>
-                      <span className="sidebar-normal">Edit Profile</span>
+                      <span className="sidebar-normal">Editer Profil</span>
                     </a>
                   </li>
                   <li>
                     <a href="#pablo" onClick={(e) => e.preventDefault}>
-                      <span className="sidebar-mini-icon">S</span>
-                      <span className="sidebar-normal">Settings</span>
+                      <span className="sidebar-mini-icon">R</span>
+                      <span className="sidebar-normal">Réglages</span>
                     </a>
                   </li>
                 </ul>
@@ -251,10 +234,6 @@ Sidebar.propTypes = {
   showNotification: PropTypes.bool,
   // background color for the component
   backgroundColor: PropTypes.oneOf([
-    "blue",
-    "yellow",
-    "green",
-    "orange",
     "red"
   ]),
   // function that is called upon pressing the button near the logo

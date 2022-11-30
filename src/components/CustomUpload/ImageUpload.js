@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // used for making the prop types of this component
 import PropTypes from "prop-types";
@@ -72,7 +56,7 @@ function ImageUpload(props) {
         ) : (
           <span>
             <Button className="btn-round" onClick={() => handleClick()}>
-              Change
+              Changer
             </Button>
             {props.avatar ? <br /> : null}
             <Button
@@ -81,7 +65,7 @@ function ImageUpload(props) {
               onClick={() => handleRemove()}
             >
               <i className="fa fa-times" />
-              Remove
+              Retirer
             </Button>
           </span>
         )}

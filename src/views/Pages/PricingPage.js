@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -45,25 +29,24 @@ function Pricing() {
           <Container>
             <Row>
               <Col xs={12} md={6} className="ml-auto mr-auto text-center">
-                <h2 className="title">Pick the best plan for you</h2>
+                <h2 className="title">Choisissez le plan qui vous convient</h2>
                 <h5 className="description">
-                  You have Free Unlimited Updates and Premium Support on each
-                  package.
+                  N'hésitez pas à nous contacter pour que nous vous aidions à choisir
                 </h5>
               </Col>
             </Row>
             <Row>
               <Col lg="3" md="6">
                 <Card className="card-pricing card-plain">
-                  <h6 className="card-category">Bravo Pack</h6>
+                  <h6 className="card-category">Pack Architecte</h6>
                   <CardBody>
                     <div className="card-icon icon-warning">
                       <i className="now-ui-icons media-1_button-power" />
                     </div>
-                    <CardTitle tag="h3">10$</CardTitle>
+                    <CardTitle tag="h3">450DT</CardTitle>
                     <ul>
-                      <li>Complete documentation</li>
-                      <li>Working materials in Sketch</li>
+                      <li>Plan 2D</li>
+                      <li>Photo de chaque pièce</li>
                     </ul>
                   </CardBody>
                   <CardFooter>
@@ -73,22 +56,24 @@ function Pricing() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      Add to Cart
+                      Ajouter au panier
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
               <Col lg="3" md="6">
-                <Card className="card-pricing">
-                  <h6 className="card-category">Alpha Pack</h6>
+                <Card className="card-pricing card-plain">
+                  <h6 className="card-category">Pack agence immobilière</h6>
                   <CardBody>
                     <div className="card-icon icon-primary">
                       <i className="now-ui-icons objects_diamond" />
                     </div>
-                    <CardTitle tag="h3">69$</CardTitle>
+                    <CardTitle tag="h3">650DT</CardTitle>
                     <ul>
-                      <li>Working materials in EPS</li>
-                      <li>6 months access to the library</li>
+                      <li>Outils de mesurage 3D</li>
+                      <li>Visite virtuelle Matterport 3D</li>
+                      <li>Hébergement 6 mois</li>
+                      <li>Insertion logo et contact</li>
                     </ul>
                   </CardBody>
                   <CardFooter>
@@ -98,22 +83,24 @@ function Pricing() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      Add to Cart
+                      Ajouter au panier
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
               <Col lg="3" md="6">
                 <Card className="card-pricing card-plain">
-                  <h6 className="card-category">Charlie Pack</h6>
+                  <h6 className="card-category">Pack entreprise</h6>
                   <CardBody>
                     <div className="card-icon icon-success">
                       <i className="now-ui-icons media-2_sound-wave" />
                     </div>
-                    <CardTitle tag="h3">69$</CardTitle>
+                    <CardTitle tag="h3">890DT</CardTitle>
                     <ul>
-                      <li>Working materials in PSD</li>
-                      <li>1 year access to the library</li>
+                      <li>Intégration dans Google Street View</li>
+                      <li>Visite virtuelle Matterport 3D</li>
+                      <li>10 Mattertags</li>
+                      <li>Hébergement 1 an</li>
                     </ul>
                   </CardBody>
                   <CardFooter>
@@ -123,22 +110,26 @@ function Pricing() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      Add to Cart
+                      Ajouter au panier
                     </Button>
                   </CardFooter>
                 </Card>
               </Col>
               <Col lg="3" md="6">
                 <Card className="card-pricing card-plain">
-                  <h6 className="card-category">Extra Pack</h6>
+                  <h6 className="card-category">Pack architecte PRO</h6>
                   <CardBody>
                     <div className="card-icon icon-danger">
                       <i className="now-ui-icons education_atom" />
                     </div>
-                    <CardTitle tag="h3">159$</CardTitle>
+                    <CardTitle tag="h3">1100DT</CardTitle>
                     <ul>
-                      <li>Complete documentation</li>
-                      <li>2GB cloud storage</li>
+                      <li>Plan 2D ou 3D coté</li>
+                      <li>Visite virtuelle Matterport 3D</li>
+                      <li>Outils de mesurage 3D</li>
+                      <li>Hébergement 1 an</li>
+                      <li>Plans d'étages format DWG et PDF</li>
+                      <li>Modélisation 3D/BIM format RVT ou IFC</li>
                     </ul>
                   </CardBody>
                   <CardFooter>
@@ -148,7 +139,7 @@ function Pricing() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      Add to Cart
+                      Ajouter au panier
                     </Button>
                   </CardFooter>
                 </Card>

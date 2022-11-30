@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 // javascript plugin used to create scrollbars on windows
@@ -25,7 +9,6 @@ import NotificationAlert from "react-notification-alert";
 import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "routes.js";
 
@@ -33,8 +16,8 @@ var ps;
 
 function Admin(props) {
   const location = useLocation();
-  const [sidebarMini, setSidebarMini] = React.useState(true);
-  const [backgroundColor, setBackgroundColor] = React.useState("blue");
+  
+  const [backgroundColor, setBackgroundColor] = React.useState("red");
   const notificationAlert = React.useRef();
   const mainPanel = React.useRef();
   React.useEffect(() => {
@@ -58,13 +41,6 @@ function Admin(props) {
   }, [location]);
   const minimizeSidebar = () => {
     var message = "Sidebar mini ";
-    if (document.body.classList.contains("sidebar-mini")) {
-      setSidebarMini(false);
-      message += "deactivated...";
-    } else {
-      setSidebarMini(true);
-      message += "activated...";
-    }
     document.body.classList.toggle("sidebar-mini");
     var options = {};
     options = {
@@ -139,12 +115,6 @@ function Admin(props) {
           )
         }
       </div>
-      <FixedPlugin
-        handleMiniClick={minimizeSidebar}
-        sidebarMini={sidebarMini}
-        bgColor={backgroundColor}
-        handleColorClick={handleColorClick}
-      />
     </div>
   );
 }

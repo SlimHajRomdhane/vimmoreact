@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -31,12 +15,15 @@ import PictureUpload from "components/CustomUpload/PictureUpload.js";
 
 const Step1 = React.forwardRef((props, ref) => {
   const [firstname, setfirstname] = React.useState("");
+  const [number, setnumber] = React.useState("");
   const [lastname, setlastname] = React.useState("");
   const [email, setemail] = React.useState("");
   const [firstnameState, setfirstnameState] = React.useState("");
+  const [numberState, setnumberState] = React.useState("");
   const [lastnameState, setlastnameState] = React.useState("");
   const [emailState, setemailState] = React.useState("");
   const [firstnameFocus, setfirstnameFocus] = React.useState("");
+  const [numberFocus, setnumberFocus] = React.useState("");
   const [lastnameFocus, setlastnameFocus] = React.useState("");
   const [emailFocus, setemailFocus] = React.useState("");
   React.useImperativeHandle(ref, () => ({
@@ -46,9 +33,11 @@ const Step1 = React.forwardRef((props, ref) => {
     state: {
       firstname,
       lastname,
+      number,
       email,
       firstnameState,
       lastnameState,
+      numberState,
       emailState
     }
   }));
@@ -68,6 +57,14 @@ const Step1 = React.forwardRef((props, ref) => {
       setlastnameState(" has-danger");
     }
   };
+  const numberChange = (e) => {
+    setnumber(e.target.value);
+    if (e.target.value.length > 2) {
+      setnumberState(" has-success");
+    } else {
+      setnumberState(" has-danger");
+    }
+  };
   const emailChange = (e) => {
     setemail(e.target.value);
     var emailRex =
@@ -82,10 +79,12 @@ const Step1 = React.forwardRef((props, ref) => {
     if (
       firstnameState !== " has-success" ||
       lastnameState !== " has-success" ||
+      numberState !== " has-success" ||
       emailState !== " has-success"
     ) {
       setfirstnameState(" has-danger");
       setlastnameState(" has-danger");
+      setnumberState(" has-danger");
       setemailState(" has-danger");
       return false;
     }
@@ -95,7 +94,7 @@ const Step1 = React.forwardRef((props, ref) => {
     <>
       <h5 className="info-text">
         {" "}
-        Let's start with the basic information (with validation)
+        Commençons par quelque informations
       </h5>
       <Row className="justify-content-center">
         <Col xs={12} sm="4">

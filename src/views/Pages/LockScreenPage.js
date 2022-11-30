@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -53,14 +37,14 @@ function LockScreenPage() {
                   <img src={avatar} alt="avatar-img" />
                 </CardHeader>
                 <CardBody>
-                  <CardTitle tag="h4">Joe Gardner</CardTitle>
+                  <CardTitle tag="h4">Nom d'utilisateur</CardTitle>
                   <FormGroup>
-                    <Input type="password" placeholder="Enter Password..." />
+                    <Input type="password" placeholder="Mot de passe..." />
                   </FormGroup>
                 </CardBody>
                 <CardFooter>
                   <Button color="primary" size="lg" className="btn-round">
-                    Unlock
+                    Déverrouiller
                   </Button>
                 </CardFooter>
               </Card>

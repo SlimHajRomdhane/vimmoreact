@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -43,6 +27,7 @@ function RegisterPage() {
   const [firstnameFocus, setfirstnameFocus] = React.useState(false);
   const [lastnameFocus, setlastnameFocus] = React.useState(false);
   const [emailFocus, setemailFocus] = React.useState(false);
+  const [numberFocus, setnumberFocus] = React.useState(false);
   React.useEffect(() => {
     document.body.classList.add("register-page");
     return function cleanup() {
@@ -63,8 +48,7 @@ function RegisterPage() {
                   <div className="description">
                     <h5 className="info-title">Marketing</h5>
                     <p className="description">
-                      We've created the marketing campaign of the website. It
-                      was a very interesting collaboration.
+                    Virtualisez votre commerce/entreprise pour qu’il puisse être visité sur Google Street!
                     </p>
                   </div>
                 </div>
@@ -73,10 +57,9 @@ function RegisterPage() {
                     <i className="now-ui-icons media-1_button-pause" />
                   </div>
                   <div className="description">
-                    <h5 className="info-title">Fully Coded in React 16</h5>
+                    <h5 className="info-title">Simple et rapide</h5>
                     <p className="description">
-                      We've developed the website with React 16, HTML5 and CSS3.
-                      The client has access to the code using GitHub.
+                    Optimisez et accélérez vos ventes et locations immobilières grâce aux visites virtuelles disponibles 24h sur 24.
                     </p>
                   </div>
                 </div>
@@ -85,10 +68,9 @@ function RegisterPage() {
                     <i className="now-ui-icons users_single-02" />
                   </div>
                   <div className="description">
-                    <h5 className="info-title">Built Audience</h5>
+                    <h5 className="info-title">Immersion interactive</h5>
                     <p className="description">
-                      There is also a Fully Customizable CMS Admin Dashboard for
-                      this product.
+                    Scénarisez l'exploration de votre environnement virtuel avec des éléments intéractifs afin d'enrichir l'expérience et les connaissances des visiteurs.
                     </p>
                   </div>
                 </div>
@@ -96,19 +78,7 @@ function RegisterPage() {
               <Col lg={4} md={8} xs={12}>
                 <Card className="card-signup">
                   <CardHeader className="text-center">
-                    <CardTitle tag="h4">Register</CardTitle>
-                    <div className="social btns-mr-5">
-                      <Button className="btn-icon btn-round" color="twitter">
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button className="btn-icon btn-round" color="dribbble">
-                        <i className="fab fa-dribbble" />
-                      </Button>
-                      <Button className="btn-icon btn-round" color="facebook">
-                        <i className="fab fa-facebook-f" />
-                      </Button>
-                      <h5 className="card-description">or be classical</h5>
-                    </div>
+                    <CardTitle tag="h4">S'enregistrer</CardTitle>
                   </CardHeader>
                   <CardBody>
                     <Form>
@@ -122,7 +92,7 @@ function RegisterPage() {
                         </InputGroupAddon>
                         <Input
                           type="text"
-                          placeholder="First Name..."
+                          placeholder="Prénom..."
                           onFocus={(e) => setfirstnameFocus(true)}
                           onBlur={(e) => setfirstnameFocus(false)}
                         />
@@ -137,7 +107,7 @@ function RegisterPage() {
                         </InputGroupAddon>
                         <Input
                           type="text"
-                          placeholder="Last Name..."
+                          placeholder="Nom de famille..."
                           onFocus={(e) => setlastnameFocus(true)}
                           onBlur={(e) => setlastnameFocus(false)}
                         />
@@ -162,7 +132,7 @@ function RegisterPage() {
                           <Input type="checkbox" />
                           <span className="form-check-sign" />
                           <div>
-                            I agree to the{" "}
+                            J'accepte les {" "}
                             <a href="#something">terms and conditions</a>.
                           </div>
                         </Label>
@@ -176,7 +146,7 @@ function RegisterPage() {
                       className="btn-round"
                       href="#pablo"
                     >
-                      Get Started
+                      Commencer
                     </Button>
                   </CardFooter>
                 </Card>
