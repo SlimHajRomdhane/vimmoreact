@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -41,27 +25,24 @@ function User() {
           <Col md="8">
             <Card>
               <CardHeader>
-                <h5 className="title">Edit Profile</h5>
+                <h5 className="title">Editer mon profile</h5>
               </CardHeader>
               <CardBody>
                 <Form>
                   <Row>
                     <Col className="pr-1" md="5">
                       <FormGroup>
-                        <label>Company (disabled)</label>
+                        <label>Entreprise</label>
                         <Input
-                          defaultValue="Creative Code Inc."
-                          disabled
-                          placeholder="Company"
+                          placeholder="Entreprise..."
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="px-1" md="3">
                       <FormGroup>
-                        <label>Username</label>
+                        <label>Nom d'utilisateur</label>
                         <Input
-                          defaultValue="michael23"
                           placeholder="Username"
                           type="text"
                         />
@@ -70,7 +51,7 @@ function User() {
                     <Col className="pl-1" md="4">
                       <FormGroup>
                         <label htmlFor="exampleInputEmail1">
-                          Email address
+                          Email
                         </label>
                         <Input placeholder="Email" type="email" />
                       </FormGroup>
@@ -79,20 +60,18 @@ function User() {
                   <Row>
                     <Col className="pr-1" md="6">
                       <FormGroup>
-                        <label>First Name</label>
+                        <label>Prénom</label>
                         <Input
-                          defaultValue="Mike"
-                          placeholder="Company"
+                          placeholder="Prénom..."
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="pl-1" md="6">
                       <FormGroup>
-                        <label>Last Name</label>
+                        <label>Nom de famille</label>
                         <Input
-                          defaultValue="Andrew"
-                          placeholder="Last Name"
+                          placeholder="Nom de famille..."
                           type="text"
                         />
                       </FormGroup>
@@ -101,10 +80,9 @@ function User() {
                   <Row>
                     <Col md="12">
                       <FormGroup>
-                        <label>Address</label>
+                        <label>Addresse</label>
                         <Input
-                          defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                          placeholder="Home Address"
+                          placeholder="Votre addresse..."
                           type="text"
                         />
                       </FormGroup>
@@ -113,40 +91,36 @@ function User() {
                   <Row>
                     <Col className="pr-1" md="4">
                       <FormGroup>
-                        <label>City</label>
+                        <label>Ville</label>
                         <Input
-                          defaultValue="Mike"
-                          placeholder="City"
+                          placeholder="Ville"
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="px-1" md="4">
                       <FormGroup>
-                        <label>Country</label>
+                        <label>Pays</label>
                         <Input
-                          defaultValue="Andrew"
-                          placeholder="Country"
+                          placeholder="Pays..."
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="pl-1" md="4">
                       <FormGroup>
-                        <label>Postal Code</label>
-                        <Input placeholder="ZIP Code" type="number" />
+                        <label>Code Postal</label>
+                        <Input placeholder="ZIP..." type="number" />
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
                     <Col md="12">
                       <FormGroup>
-                        <label>About Me</label>
+                        <label>A propos de moi</label>
                         <Input
                           cols="80"
-                          defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                            that two seat Lambo."
-                          placeholder="Here can be your description"
+                          placeholder="Ecrire votre description"
                           rows="4"
                           type="textarea"
                         />
@@ -170,14 +144,14 @@ function User() {
                       className="avatar border-gray"
                       src={require("assets/img/mike.jpg")}
                     />
-                    <h5 className="title">Mike Andrew</h5>
+                    <h5 className="title">Personne test</h5>
                   </a>
-                  <p className="description">michael24</p>
+                  <p className="description">Personne test</p>
                 </div>
                 <p className="description text-center">
-                  {'"'}Lamborghini Mercy <br />
-                  Your chick she so thirsty <br />
-                  I'm in that two seat Lambo{'"'}
+                  {'"'} <br />
+                   <br />
+                  {'"'}
                 </p>
               </CardBody>
               <hr />

@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Now UI Dashboard PRO React - v1.5.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -38,7 +22,7 @@ function TimelinePage() {
       <PanelHeader size="sm" />
       <div className="content">
         <div className="header text-center">
-          <h3 className="title">Timeline</h3>
+          <h3 className="title">Process</h3>
         </div>
         <Row>
           <Col md="12">
@@ -51,21 +35,19 @@ function TimelinePage() {
                     </div>
                     <div className="timeline-panel">
                       <div className="timeline-heading">
-                        <Badge color="danger">Some Title</Badge>
+                        <Badge color="danger">Quel est le processus ?</Badge>
                       </div>
                       <div className="timeline-body">
                         <p>
-                          Wifey made the best Father's Day meal ever. So
-                          thankful so happy so blessed. Thank you for making my
-                          family We just had fun with the “future” theme !!! It
-                          was a fun night all together ... The always rude Kanye
-                          Show at 2am Sold Out Famous viewing @ Figueroa and
-                          12th in downtown.
+                        Choisissez votre pack ou vos services individuellement<br/>
+                        Prenez un rendez-vous avec l’agence en cliquant sur "Prendre Rendez-Vous"<br/>
+                        Shooting de la propriété<br/>
+                        Recevez et télécharger votre rendu sur votre espace personnel
                         </p>
                       </div>
                       <h6>
                         <i className="ti-time" />
-                        11 hours ago via Twitter
+                        Zied Ben Mahmoud CEO
                       </h6>
                     </div>
                   </li>
@@ -75,16 +57,13 @@ function TimelinePage() {
                     </div>
                     <div className="timeline-panel">
                       <div className="timeline-heading">
-                        <Badge color="success">Another One</Badge>
+                        <Badge color="success">Marketing</Badge>
                       </div>
                       <div className="timeline-body">
                         <p>
-                          Thank God for the support of my wife and real friends.
-                          I also wanted to point out that it’s the first album
-                          to go number 1 off of streaming!!! I love you Ellen
-                          and also my number one design rule of anything I do
-                          from shoes to music to homes is that Kim has to like
-                          it....
+                        Les visites virtuelles que nous proposons sont « le must » dans le domaine. Elles mettent vraiment en valeur les biens immobiliers.
+                        Elles font la différence avec les visites virtuelles « low-cost » basées sur de simples photos 360° assemblées.
+                        Ainsi vous vous différenciez de la concurrence et votre bien sera vendu plus rapidement.
                         </p>
                       </div>
                     </div>
@@ -95,19 +74,15 @@ function TimelinePage() {
                     </div>
                     <div className="timeline-panel">
                       <div className="timeline-heading">
-                        <Badge color="info">Another Title</Badge>
+                        <Badge color="info">Visite virtuelle 24/7</Badge>
                       </div>
                       <div className="timeline-body">
                         <p>
-                          Called I Miss the Old Kanye That’s all it was Kanye
-                          And I love you like Kanye loves Kanye Famous viewing @
-                          Figueroa and 12th in downtown LA 11:10PM
+                        Le saviez vous ? Chez Virtual Immo vous avez la possibilité de grouper vos prestations en commandant un pack parmi les 3 disponibles. Pas besoin de bloquer plusieurs dates, un seul rendez-vous suffit avec un seul prestataire pour l’ensemble des services ! Pratique non ? Plus d’infos ici appelez nous au 56654000!
                         </p>
                         <p>
-                          What if Kanye made a song about Kanye Royère doesn't
-                          make a Polar bear bed but the Polar bear couch is my
-                          favorite piece of furniture we own It wasn’t any
-                          Kanyes Set on his goals Kanye
+                        Chez Virtual Immo nous utilisons la technologie dernière génération Matterport pour faire nos visites virtuelles. 
+                        Elle permet la capture des couleurs et de la profondeur pour scanner l’intérieur d’un bien en 3D comme si vous étiez !
                         </p>
                         <hr />
                       </div>
@@ -127,19 +102,19 @@ function TimelinePage() {
                               href="#pablo"
                               onClick={(e) => e.preventDefault()}
                             >
-                              Action
+                              Like
                             </DropdownItem>
                             <DropdownItem
                               href="#pablo"
                               onClick={(e) => e.preventDefault()}
                             >
-                              Another action
+                              Dislike
                             </DropdownItem>
                             <DropdownItem
                               href="#pablo"
                               onClick={(e) => e.preventDefault()}
                             >
-                              Something else here
+                              Comment
                             </DropdownItem>
                           </DropdownMenu>
                         </UncontrolledDropdown>
@@ -152,15 +127,11 @@ function TimelinePage() {
                     </div>
                     <div className="timeline-panel">
                       <div className="timeline-heading">
-                        <Badge color="warning">Another One</Badge>
+                        <Badge color="warning">Immersion interactive</Badge>
                       </div>
                       <div className="timeline-body">
                         <p>
-                          Tune into Big Boy's 92.3 I'm about to play the first
-                          single from Cruel Winter also to Kim’s hair and makeup
-                          Lorraine jewelry and the whole style squad at Balmain
-                          and the Yeezy team. Thank you Anna for the invite
-                          thank you to the whole Vogue team
+                        Scénarisez l'exploration de votre environnement virtuel avec des éléments intéractifs afin d'enrichir l'expérience et les connaissances des visiteurs.
                         </p>
                       </div>
                     </div>

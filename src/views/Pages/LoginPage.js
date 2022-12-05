@@ -86,7 +86,7 @@ function LoginPage() {
                       block
                       color="primary"
                       size="lg"
-                      href="#pablo"
+                      href="/dashboard"
                       className="mb-3 btn-round"
                     >
                       S'identifier
